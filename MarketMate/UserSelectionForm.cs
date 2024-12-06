@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace MarketMate
 {
-    public partial class Form1 : Form
+    public partial class UserSelectionForm : Form
     {
-        public Form1()
+        public UserSelectionForm()
         {
             InitializeComponent();
+        }
+
+        private void CashierBtn_Click(object sender, EventArgs e)
+        {
+            CashierLogin cashierLogin = new CashierLogin();
+            cashierLogin.Show();
+            this.Hide();
         }
     }
 }
