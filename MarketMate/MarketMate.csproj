@@ -69,6 +69,9 @@
     <Compile Include="UserSelectionForm.Designer.cs">
       <DependentUpon>UserSelectionForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CashierLogin.resx">
       <DependentUpon>CashierLogin.cs</DependentUpon>
     </EmbeddedResource>

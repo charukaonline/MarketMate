@@ -68,6 +68,7 @@
             this.AdminBtn.Size = new System.Drawing.Size(180, 45);
             this.AdminBtn.TabIndex = 13;
             this.AdminBtn.Text = "Admin Login";
+            this.AdminBtn.Click += new System.EventHandler(this.AdminBtn_Click);
             // 
             // label1
             // 

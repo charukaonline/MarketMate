@@ -22,5 +22,12 @@ namespace MarketMate
             usernameValidationLbl.Visible = false;
             pinValidationLbl.Visible = false;
         }
+
+        private void goBackBtn_Click_1(object sender, EventArgs e)
+        {
+            UserSelectionForm userSelectionForm = new UserSelectionForm();
+            userSelectionForm.Show();
+            this.Hide();
+        }
     }
 }
