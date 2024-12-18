@@ -16,5 +16,12 @@ namespace MarketMate
         {
             InitializeComponent();
         }
+
+        private void goBackBtn_Click(object sender, EventArgs e)
+        {
+            UserSelectionForm UserSelectionForm = new UserSelectionForm();
+            UserSelectionForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -23,5 +23,12 @@ namespace MarketMate
             cashierLogin.Show();
             this.Hide();
         }
+
+        private void AdminBtn_Click(object sender, EventArgs e)
+        {
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Hide();
+        }
     }
 }
