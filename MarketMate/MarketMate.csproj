@@ -167,7 +167,6 @@
     <Compile Include="CashierLogin.Designer.cs">
       <DependentUpon>CashierLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="dbConn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserSelectionForm.cs">

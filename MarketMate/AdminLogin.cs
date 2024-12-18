@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace MarketMate
 {
@@ -22,6 +23,11 @@ namespace MarketMate
             UserSelectionForm UserSelectionForm = new UserSelectionForm();
             UserSelectionForm.Show();
             this.Hide();
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
