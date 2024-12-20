@@ -13,7 +13,6 @@ namespace MarketMate
 {
     public partial class AdminLogin : Form
     {
-        private dbConn db;
 
         public AdminLogin()
         {
@@ -58,7 +57,7 @@ namespace MarketMate
                 {
                     conn.Open();
 
-                    string query = "SELECT COUNT(*) FROM Admins WHERE Username = @Username AND Password = @Password";
+                    string query = "SELECT COUNT(*) FROM AdminUser WHERE Username = @Username AND Password = @Password";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
