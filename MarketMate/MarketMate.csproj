@@ -194,6 +194,9 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CashierDashboard.resx">
+      <DependentUpon>CashierDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CashierLogin.resx">
       <DependentUpon>CashierLogin.cs</DependentUpon>
     </EmbeddedResource>
