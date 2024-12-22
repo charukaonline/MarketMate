@@ -33,7 +33,6 @@
             this.labelLockoutTimer = new System.Windows.Forms.Label();
             this.pinValidationLbl = new System.Windows.Forms.Label();
             this.usernameValidationLbl = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.loginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.userNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordTxtBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,8 +45,8 @@
             this.goBackBtn.AutoSize = true;
             this.goBackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goBackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goBackBtn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.goBackBtn.Location = new System.Drawing.Point(275, 460);
+            this.goBackBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.goBackBtn.Location = new System.Drawing.Point(270, 437);
             this.goBackBtn.Name = "goBackBtn";
             this.goBackBtn.Size = new System.Drawing.Size(88, 24);
             this.goBackBtn.TabIndex = 29;
@@ -98,26 +97,13 @@
             this.usernameValidationLbl.TabIndex = 26;
             this.usernameValidationLbl.Text = "*Enter valid user name";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(25, 422);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(572, 20);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "* This is the admin login, please go back to Cashier Login if you are not an admi" +
-    "n";
-            // 
             // loginBtn
             // 
             this.loginBtn.BorderRadius = 10;
             this.loginBtn.CheckedState.Parent = this.loginBtn;
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.CustomImages.Parent = this.loginBtn;
-            this.loginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
+            this.loginBtn.FillColor = System.Drawing.Color.SeaGreen;
             this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.HoverState.Parent = this.loginBtn;
@@ -224,12 +210,12 @@
             this.Controls.Add(this.labelLockoutTimer);
             this.Controls.Add(this.pinValidationLbl);
             this.Controls.Add(this.usernameValidationLbl);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.userNameTxt);
             this.Controls.Add(this.passwordTxtBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLogin";
@@ -246,7 +232,6 @@
         private System.Windows.Forms.Label labelLockoutTimer;
         private System.Windows.Forms.Label pinValidationLbl;
         private System.Windows.Forms.Label usernameValidationLbl;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button loginBtn;
         private Guna.UI2.WinForms.Guna2TextBox userNameTxt;
         private Guna.UI2.WinForms.Guna2TextBox passwordTxtBox;
