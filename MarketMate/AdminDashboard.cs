@@ -16,5 +16,23 @@ namespace MarketMate
         {
             InitializeComponent();
         }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+            addCashiers1.Show();
+            manageCashiers1.Hide();
+        }
+
+        private void addCashiersBtn_Click(object sender, EventArgs e)
+        {
+            addCashiers1.Show();
+            manageCashiers1.Hide();
+        }
+
+        private void mngCashiersBtn_Click(object sender, EventArgs e)
+        {
+            addCashiers1.Hide();
+            manageCashiers1.Show();
+        }
     }
 }

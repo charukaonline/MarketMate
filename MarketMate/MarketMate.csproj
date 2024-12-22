@@ -167,6 +167,18 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminUserControls\AddCashiers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\AddCashiers.Designer.cs">
+      <DependentUpon>AddCashiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUserControls\ManageCashiers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\ManageCashiers.Designer.cs">
+      <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </Compile>
     <Compile Include="CashierDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +206,15 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\AddCashiers.resx">
+      <DependentUpon>AddCashiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\ManageCashiers.resx">
+      <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierDashboard.resx">
+      <DependentUpon>CashierDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CashierLogin.resx">
       <DependentUpon>CashierLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +226,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserSelectionForm.resx">
       <DependentUpon>UserSelectionForm.cs</DependentUpon>
@@ -225,6 +247,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guna.UI2.dll" />
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
