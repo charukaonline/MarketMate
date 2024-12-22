@@ -68,6 +68,8 @@ namespace MarketMate
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             //Admin dashboard redirect
+                            AdminDashboard adminDashboard = new AdminDashboard();
+                            adminDashboard.Show();
                             this.Hide();
                         }
                         else
