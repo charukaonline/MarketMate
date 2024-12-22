@@ -38,10 +38,10 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.manageCashiers1 = new MarketMate.adminUserControls.ManageCashiers();
-            this.addCashiers1 = new MarketMate.adminUserControls.AddCashiers();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.manageCashiers1 = new MarketMate.adminUserControls.ManageCashiers();
+            this.addCashiers1 = new MarketMate.adminUserControls.AddCashiers();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -53,7 +53,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Panel1.BackColor = System.Drawing.Color.DarkGreen;
             this.guna2Panel1.Controls.Add(this.guna2Panel6);
             this.guna2Panel1.Controls.Add(this.guna2Panel5);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
@@ -142,7 +142,7 @@
             // 
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Green;
+            this.guna2Button3.FillColor = System.Drawing.Color.Maroon;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
@@ -179,20 +179,6 @@
             this.panelContainer.Size = new System.Drawing.Size(1040, 505);
             this.panelContainer.TabIndex = 1;
             // 
-            // manageCashiers1
-            // 
-            this.manageCashiers1.Location = new System.Drawing.Point(0, 0);
-            this.manageCashiers1.Name = "manageCashiers1";
-            this.manageCashiers1.Size = new System.Drawing.Size(1040, 505);
-            this.manageCashiers1.TabIndex = 1;
-            // 
-            // addCashiers1
-            // 
-            this.addCashiers1.Location = new System.Drawing.Point(0, 0);
-            this.addCashiers1.Name = "addCashiers1";
-            this.addCashiers1.Size = new System.Drawing.Size(1040, 505);
-            this.addCashiers1.TabIndex = 0;
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.label1);
@@ -213,6 +199,20 @@
             this.label1.Size = new System.Drawing.Size(180, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "MarketMate";
+            // 
+            // manageCashiers1
+            // 
+            this.manageCashiers1.Location = new System.Drawing.Point(0, 0);
+            this.manageCashiers1.Name = "manageCashiers1";
+            this.manageCashiers1.Size = new System.Drawing.Size(1040, 505);
+            this.manageCashiers1.TabIndex = 1;
+            // 
+            // addCashiers1
+            // 
+            this.addCashiers1.Location = new System.Drawing.Point(0, 0);
+            this.addCashiers1.Name = "addCashiers1";
+            this.addCashiers1.Size = new System.Drawing.Size(1040, 505);
+            this.addCashiers1.TabIndex = 0;
             // 
             // AdminDashboard
             // 
