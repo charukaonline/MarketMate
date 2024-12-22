@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -39,12 +37,18 @@
             this.mngCashiersBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.manageCashiers1 = new MarketMate.adminUserControls.ManageCashiers();
+            this.addCashiers1 = new MarketMate.adminUserControls.AddCashiers();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
+            this.panelContainer.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -61,27 +65,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1040, 89);
             this.guna2Panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MarketMate";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(199, 89);
-            this.guna2Panel2.TabIndex = 0;
             // 
             // guna2Panel3
             // 
@@ -137,6 +120,7 @@
             this.addCashiersBtn.Size = new System.Drawing.Size(180, 45);
             this.addCashiersBtn.TabIndex = 0;
             this.addCashiersBtn.Text = "Add Cashiers";
+            this.addCashiersBtn.Click += new System.EventHandler(this.addCashiersBtn_Click);
             // 
             // mngCashiersBtn
             // 
@@ -152,6 +136,7 @@
             this.mngCashiersBtn.Size = new System.Drawing.Size(180, 45);
             this.mngCashiersBtn.TabIndex = 1;
             this.mngCashiersBtn.Text = "Manage Cashiers";
+            this.mngCashiersBtn.Click += new System.EventHandler(this.mngCashiersBtn_Click);
             // 
             // guna2Button3
             // 
@@ -183,22 +168,71 @@
             this.guna2Button4.TabIndex = 2;
             this.guna2Button4.Text = "Settings";
             // 
+            // panelContainer
+            // 
+            this.panelContainer.Controls.Add(this.manageCashiers1);
+            this.panelContainer.Controls.Add(this.addCashiers1);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 89);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.ShadowDecoration.Parent = this.panelContainer;
+            this.panelContainer.Size = new System.Drawing.Size(1040, 505);
+            this.panelContainer.TabIndex = 1;
+            // 
+            // manageCashiers1
+            // 
+            this.manageCashiers1.Location = new System.Drawing.Point(0, 0);
+            this.manageCashiers1.Name = "manageCashiers1";
+            this.manageCashiers1.Size = new System.Drawing.Size(1040, 505);
+            this.manageCashiers1.TabIndex = 1;
+            // 
+            // addCashiers1
+            // 
+            this.addCashiers1.Location = new System.Drawing.Point(0, 0);
+            this.addCashiers1.Name = "addCashiers1";
+            this.addCashiers1.Size = new System.Drawing.Size(1040, 505);
+            this.addCashiers1.TabIndex = 0;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.label1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(199, 89);
+            this.guna2Panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MarketMate";
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 594);
+            this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
+            this.panelContainer.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -206,7 +240,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
@@ -215,6 +248,10 @@
         private Guna.UI2.WinForms.Guna2Button mngCashiersBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Button addCashiersBtn;
+        private Guna.UI2.WinForms.Guna2Panel panelContainer;
+        private adminUserControls.AddCashiers addCashiers1;
+        private adminUserControls.ManageCashiers manageCashiers1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label1;
     }
 }
