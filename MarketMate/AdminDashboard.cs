@@ -12,9 +12,16 @@ namespace MarketMate
 {
     public partial class AdminDashboard : Form
     {
+        private System.Windows.Forms.Timer refreshTimer;
+
         public AdminDashboard()
         {
             InitializeComponent();
+
+            refreshTimer = new System.Windows.Forms.Timer();
+            refreshTimer.Interval = 2000;
+            refreshTimer.Tick += RefreshTimer_Tick;
+            refreshTimer.Start();
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -33,6 +40,12 @@ namespace MarketMate
         {
             addCashiers1.Hide();
             manageCashiers1.Show();
+        }
+
+        private void RefreshTimer_Tick(object sender, EventArgs e)
+        {
+            //addCashiers1.RefreshData();
+            manageCashiers1.RefreshData();
         }
     }
 }

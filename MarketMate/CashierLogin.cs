@@ -74,6 +74,8 @@ namespace MarketMate
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             //Cashier dashboard redirect
+                            CashierDashboard cashierDashboard = new CashierDashboard();
+                            cashierDashboard.Show();
                             this.Hide();
                         }
                         else
