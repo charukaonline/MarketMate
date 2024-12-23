@@ -19,7 +19,7 @@ namespace MarketMate
             InitializeComponent();
 
             refreshTimer = new System.Windows.Forms.Timer();
-            refreshTimer.Interval = 2000;
+            refreshTimer.Interval = 1000;
             refreshTimer.Tick += RefreshTimer_Tick;
             refreshTimer.Start();
         }

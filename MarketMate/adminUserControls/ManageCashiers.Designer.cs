@@ -31,6 +31,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.showUsers = new System.Windows.Forms.DataGridView();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.cashierIDTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,11 +41,10 @@
             this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.passwordTxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.showUsers = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showUsers)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -78,6 +78,19 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1040, 287);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // showUsers
+            // 
+            this.showUsers.AllowUserToOrderColumns = true;
+            this.showUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.showUsers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.showUsers.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.showUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.showUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.showUsers.Location = new System.Drawing.Point(0, 0);
+            this.showUsers.Name = "showUsers";
+            this.showUsers.Size = new System.Drawing.Size(1040, 287);
+            this.showUsers.TabIndex = 0;
             // 
             // guna2Panel3
             // 
@@ -277,17 +290,6 @@
             this.passwordTxt.Size = new System.Drawing.Size(288, 36);
             this.passwordTxt.TabIndex = 5;
             // 
-            // showUsers
-            // 
-            this.showUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.showUsers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.showUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.showUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.showUsers.Location = new System.Drawing.Point(0, 0);
-            this.showUsers.Name = "showUsers";
-            this.showUsers.Size = new System.Drawing.Size(1040, 287);
-            this.showUsers.TabIndex = 0;
-            // 
             // ManageCashiers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,9 +310,9 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showUsers)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.showUsers)).EndInit();
             this.ResumeLayout(false);
 
         }
