@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ManageCashiers";
             this.Size = new System.Drawing.Size(1040, 505);
+            this.Load += new System.EventHandler(this.ManageCashiers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
