@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cashierPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cashierUName = new Guna.UI2.WinForms.Guna2TextBox();
             this.submitBtn = new Guna.UI2.WinForms.Guna2Button();
             this.userRoleCombo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cashierName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cashierName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cashierUName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cashierPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel4.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -65,48 +65,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1040, 505);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(294, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(437, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Add Cashiers and Supervisors";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1040, 66);
-            this.guna2Panel2.TabIndex = 3;
-            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.guna2Panel5);
             this.guna2Panel3.Controls.Add(this.guna2Panel4);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 66);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 60);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1040, 439);
+            this.guna2Panel3.Size = new System.Drawing.Size(1040, 445);
             this.guna2Panel3.TabIndex = 4;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.guna2Panel6);
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(706, 439);
-            this.guna2Panel4.TabIndex = 2;
             // 
             // guna2Panel5
             // 
@@ -116,7 +84,7 @@
             this.guna2Panel5.Location = new System.Drawing.Point(712, 0);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(328, 439);
+            this.guna2Panel5.Size = new System.Drawing.Size(328, 445);
             this.guna2Panel5.TabIndex = 3;
             // 
             // guna2PictureBox1
@@ -126,10 +94,20 @@
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(328, 439);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(328, 445);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.guna2Panel6);
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(706, 445);
+            this.guna2Panel4.TabIndex = 2;
             // 
             // guna2Panel6
             // 
@@ -147,6 +125,56 @@
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(537, 436);
             this.guna2Panel6.TabIndex = 0;
+            // 
+            // cashierPass
+            // 
+            this.cashierPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cashierPass.DefaultText = "";
+            this.cashierPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cashierPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cashierPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cashierPass.DisabledState.Parent = this.cashierPass;
+            this.cashierPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cashierPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cashierPass.FocusedState.Parent = this.cashierPass;
+            this.cashierPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashierPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cashierPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cashierPass.HoverState.Parent = this.cashierPass;
+            this.cashierPass.Location = new System.Drawing.Point(74, 200);
+            this.cashierPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cashierPass.Name = "cashierPass";
+            this.cashierPass.PasswordChar = '*';
+            this.cashierPass.PlaceholderText = "";
+            this.cashierPass.SelectedText = "";
+            this.cashierPass.ShadowDecoration.Parent = this.cashierPass;
+            this.cashierPass.Size = new System.Drawing.Size(393, 43);
+            this.cashierPass.TabIndex = 18;
+            // 
+            // cashierUName
+            // 
+            this.cashierUName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cashierUName.DefaultText = "";
+            this.cashierUName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cashierUName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cashierUName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cashierUName.DisabledState.Parent = this.cashierUName;
+            this.cashierUName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cashierUName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cashierUName.FocusedState.Parent = this.cashierUName;
+            this.cashierUName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashierUName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cashierUName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cashierUName.HoverState.Parent = this.cashierUName;
+            this.cashierUName.Location = new System.Drawing.Point(74, 127);
+            this.cashierUName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cashierUName.Name = "cashierUName";
+            this.cashierUName.PasswordChar = '\0';
+            this.cashierUName.PlaceholderText = "";
+            this.cashierUName.SelectedText = "";
+            this.cashierUName.ShadowDecoration.Parent = this.cashierUName;
+            this.cashierUName.Size = new System.Drawing.Size(393, 43);
+            this.cashierUName.TabIndex = 17;
             // 
             // submitBtn
             // 
@@ -207,26 +235,6 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Password";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 18);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 18);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Full Name";
-            // 
             // cashierName
             // 
             this.cashierName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -252,55 +260,47 @@
             this.cashierName.Size = new System.Drawing.Size(393, 43);
             this.cashierName.TabIndex = 11;
             // 
-            // cashierUName
+            // label3
             // 
-            this.cashierUName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cashierUName.DefaultText = "";
-            this.cashierUName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cashierUName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cashierUName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierUName.DisabledState.Parent = this.cashierUName;
-            this.cashierUName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierUName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierUName.FocusedState.Parent = this.cashierUName;
-            this.cashierUName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierUName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cashierUName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierUName.HoverState.Parent = this.cashierUName;
-            this.cashierUName.Location = new System.Drawing.Point(74, 127);
-            this.cashierUName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cashierUName.Name = "cashierUName";
-            this.cashierUName.PasswordChar = '\0';
-            this.cashierUName.PlaceholderText = "";
-            this.cashierUName.SelectedText = "";
-            this.cashierUName.ShadowDecoration.Parent = this.cashierUName;
-            this.cashierUName.Size = new System.Drawing.Size(393, 43);
-            this.cashierUName.TabIndex = 17;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(71, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 18);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Username";
             // 
-            // cashierPass
+            // label2
             // 
-            this.cashierPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cashierPass.DefaultText = "";
-            this.cashierPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cashierPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cashierPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierPass.DisabledState.Parent = this.cashierPass;
-            this.cashierPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierPass.FocusedState.Parent = this.cashierPass;
-            this.cashierPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cashierPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierPass.HoverState.Parent = this.cashierPass;
-            this.cashierPass.Location = new System.Drawing.Point(74, 200);
-            this.cashierPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cashierPass.Name = "cashierPass";
-            this.cashierPass.PasswordChar = '*';
-            this.cashierPass.PlaceholderText = "";
-            this.cashierPass.SelectedText = "";
-            this.cashierPass.ShadowDecoration.Parent = this.cashierPass;
-            this.cashierPass.Size = new System.Drawing.Size(393, 43);
-            this.cashierPass.TabIndex = 18;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(71, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Full Name";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.guna2Panel2.Controls.Add(this.label1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(1040, 60);
+            this.guna2Panel2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(294, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(437, 33);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Add Cashiers and Supervisors";
             // 
             // AddCashiers
             // 
@@ -310,14 +310,14 @@
             this.Name = "AddCashiers";
             this.Size = new System.Drawing.Size(1040, 505);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
