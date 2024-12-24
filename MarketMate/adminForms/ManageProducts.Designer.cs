@@ -32,13 +32,14 @@
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.manageStocksBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.manageProductsBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.categoriesBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.mngCashiersBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.mngProductsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.addCashiersBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.addProductsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.addProducts1 = new MarketMate.adminUserControls.AddProducts();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -77,7 +78,7 @@
             this.manageStocksBtn.CheckedState.Parent = this.manageStocksBtn;
             this.manageStocksBtn.CustomImages.Parent = this.manageStocksBtn;
             this.manageStocksBtn.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.manageStocksBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageStocksBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageStocksBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.manageStocksBtn.HoverState.Parent = this.manageStocksBtn;
             this.manageStocksBtn.Location = new System.Drawing.Point(17, 22);
@@ -85,11 +86,11 @@
             this.manageStocksBtn.ShadowDecoration.Parent = this.manageStocksBtn;
             this.manageStocksBtn.Size = new System.Drawing.Size(166, 45);
             this.manageStocksBtn.TabIndex = 2;
-            this.manageStocksBtn.Text = "Manage Stock";
+            this.manageStocksBtn.Text = "Manage Categories";
             // 
             // guna2Panel5
             // 
-            this.guna2Panel5.Controls.Add(this.manageProductsBtn);
+            this.guna2Panel5.Controls.Add(this.categoriesBtn);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel5.Location = new System.Drawing.Point(617, 0);
             this.guna2Panel5.Name = "guna2Panel5";
@@ -97,24 +98,24 @@
             this.guna2Panel5.Size = new System.Drawing.Size(210, 89);
             this.guna2Panel5.TabIndex = 3;
             // 
-            // manageProductsBtn
+            // categoriesBtn
             // 
-            this.manageProductsBtn.CheckedState.Parent = this.manageProductsBtn;
-            this.manageProductsBtn.CustomImages.Parent = this.manageProductsBtn;
-            this.manageProductsBtn.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.manageProductsBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageProductsBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.manageProductsBtn.HoverState.Parent = this.manageProductsBtn;
-            this.manageProductsBtn.Location = new System.Drawing.Point(16, 22);
-            this.manageProductsBtn.Name = "manageProductsBtn";
-            this.manageProductsBtn.ShadowDecoration.Parent = this.manageProductsBtn;
-            this.manageProductsBtn.Size = new System.Drawing.Size(171, 45);
-            this.manageProductsBtn.TabIndex = 1;
-            this.manageProductsBtn.Text = "Manage Products";
+            this.categoriesBtn.CheckedState.Parent = this.categoriesBtn;
+            this.categoriesBtn.CustomImages.Parent = this.categoriesBtn;
+            this.categoriesBtn.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.categoriesBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoriesBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.categoriesBtn.HoverState.Parent = this.categoriesBtn;
+            this.categoriesBtn.Location = new System.Drawing.Point(16, 22);
+            this.categoriesBtn.Name = "categoriesBtn";
+            this.categoriesBtn.ShadowDecoration.Parent = this.categoriesBtn;
+            this.categoriesBtn.Size = new System.Drawing.Size(171, 45);
+            this.categoriesBtn.TabIndex = 1;
+            this.categoriesBtn.Text = "Add Categories";
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Controls.Add(this.mngCashiersBtn);
+            this.guna2Panel4.Controls.Add(this.mngProductsBtn);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel4.Location = new System.Drawing.Point(409, 0);
             this.guna2Panel4.Name = "guna2Panel4";
@@ -122,24 +123,25 @@
             this.guna2Panel4.Size = new System.Drawing.Size(208, 89);
             this.guna2Panel4.TabIndex = 2;
             // 
-            // mngCashiersBtn
+            // mngProductsBtn
             // 
-            this.mngCashiersBtn.CheckedState.Parent = this.mngCashiersBtn;
-            this.mngCashiersBtn.CustomImages.Parent = this.mngCashiersBtn;
-            this.mngCashiersBtn.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.mngCashiersBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mngCashiersBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.mngCashiersBtn.HoverState.Parent = this.mngCashiersBtn;
-            this.mngCashiersBtn.Location = new System.Drawing.Point(17, 22);
-            this.mngCashiersBtn.Name = "mngCashiersBtn";
-            this.mngCashiersBtn.ShadowDecoration.Parent = this.mngCashiersBtn;
-            this.mngCashiersBtn.Size = new System.Drawing.Size(171, 45);
-            this.mngCashiersBtn.TabIndex = 1;
-            this.mngCashiersBtn.Text = "Manage Cashiers";
+            this.mngProductsBtn.CheckedState.Parent = this.mngProductsBtn;
+            this.mngProductsBtn.CustomImages.Parent = this.mngProductsBtn;
+            this.mngProductsBtn.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.mngProductsBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mngProductsBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.mngProductsBtn.HoverState.Parent = this.mngProductsBtn;
+            this.mngProductsBtn.Location = new System.Drawing.Point(17, 22);
+            this.mngProductsBtn.Name = "mngProductsBtn";
+            this.mngProductsBtn.ShadowDecoration.Parent = this.mngProductsBtn;
+            this.mngProductsBtn.Size = new System.Drawing.Size(171, 45);
+            this.mngProductsBtn.TabIndex = 1;
+            this.mngProductsBtn.Text = "Manage Products";
+            this.mngProductsBtn.Click += new System.EventHandler(this.mngProductsBtn_Click);
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.addCashiersBtn);
+            this.guna2Panel3.Controls.Add(this.addProductsBtn);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel3.Location = new System.Drawing.Point(199, 0);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -147,20 +149,21 @@
             this.guna2Panel3.Size = new System.Drawing.Size(210, 89);
             this.guna2Panel3.TabIndex = 1;
             // 
-            // addCashiersBtn
+            // addProductsBtn
             // 
-            this.addCashiersBtn.CheckedState.Parent = this.addCashiersBtn;
-            this.addCashiersBtn.CustomImages.Parent = this.addCashiersBtn;
-            this.addCashiersBtn.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.addCashiersBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCashiersBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.addCashiersBtn.HoverState.Parent = this.addCashiersBtn;
-            this.addCashiersBtn.Location = new System.Drawing.Point(19, 22);
-            this.addCashiersBtn.Name = "addCashiersBtn";
-            this.addCashiersBtn.ShadowDecoration.Parent = this.addCashiersBtn;
-            this.addCashiersBtn.Size = new System.Drawing.Size(173, 45);
-            this.addCashiersBtn.TabIndex = 0;
-            this.addCashiersBtn.Text = "Add Cashiers";
+            this.addProductsBtn.CheckedState.Parent = this.addProductsBtn;
+            this.addProductsBtn.CustomImages.Parent = this.addProductsBtn;
+            this.addProductsBtn.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.addProductsBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addProductsBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.addProductsBtn.HoverState.Parent = this.addProductsBtn;
+            this.addProductsBtn.Location = new System.Drawing.Point(19, 22);
+            this.addProductsBtn.Name = "addProductsBtn";
+            this.addProductsBtn.ShadowDecoration.Parent = this.addProductsBtn;
+            this.addProductsBtn.Size = new System.Drawing.Size(173, 45);
+            this.addProductsBtn.TabIndex = 0;
+            this.addProductsBtn.Text = "Add Products";
+            this.addProductsBtn.Click += new System.EventHandler(this.addProductsBtn_Click);
             // 
             // guna2Panel2
             // 
@@ -175,25 +178,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(12, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 34);
+            this.label1.Size = new System.Drawing.Size(176, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MarketMate";
+            this.label1.Text = "Product Management";
+            // 
+            // addProducts1
+            // 
+            this.addProducts1.Location = new System.Drawing.Point(0, 86);
+            this.addProducts1.Name = "addProducts1";
+            this.addProducts1.Size = new System.Drawing.Size(1040, 510);
+            this.addProducts1.TabIndex = 2;
             // 
             // ManageProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 594);
+            this.Controls.Add(this.addProducts1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ManageProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageProducts";
+            this.Load += new System.EventHandler(this.ManageProducts_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
@@ -211,12 +223,13 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2Button manageStocksBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2Button manageProductsBtn;
+        private Guna.UI2.WinForms.Guna2Button categoriesBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Button mngCashiersBtn;
+        private Guna.UI2.WinForms.Guna2Button mngProductsBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button addCashiersBtn;
+        private Guna.UI2.WinForms.Guna2Button addProductsBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label1;
+        private adminUserControls.AddProducts addProducts1;
     }
 }
