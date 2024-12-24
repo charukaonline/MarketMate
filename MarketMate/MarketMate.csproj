@@ -161,6 +161,18 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminForms\ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForms\ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminForms\ManageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForms\ManageStock.Designer.cs">
+      <DependentUpon>ManageStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +214,12 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForms\ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForms\ManageStock.resx">
+      <DependentUpon>ManageStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketMate.adminForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,18 @@ namespace MarketMate
         {
             //addCashiers1.RefreshData();
             manageCashiers1.RefreshData();
+        }
+
+        private void manageProductsBtn_Click(object sender, EventArgs e)
+        {
+            ManageProducts manageProducts = new ManageProducts();
+            manageProducts.Show();
+        }
+
+        private void manageStocksBtn_Click(object sender, EventArgs e)
+        {
+            ManageStock manageStock = new ManageStock();
+            manageStock.Show();
         }
     }
 }
