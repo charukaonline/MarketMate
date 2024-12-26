@@ -39,12 +39,15 @@
             this.addStocksBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.addStocks1 = new MarketMate.adminUserControls.AddStocks();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -183,11 +186,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock Management";
             // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.Controls.Add(this.addStocks1);
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel7.Location = new System.Drawing.Point(0, 89);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
+            this.guna2Panel7.Size = new System.Drawing.Size(1040, 505);
+            this.guna2Panel7.TabIndex = 3;
+            // 
+            // addStocks1
+            // 
+            this.addStocks1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addStocks1.Location = new System.Drawing.Point(0, 0);
+            this.addStocks1.Name = "addStocks1";
+            this.addStocks1.Size = new System.Drawing.Size(1040, 505);
+            this.addStocks1.TabIndex = 0;
+            // 
             // ManageStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 594);
+            this.Controls.Add(this.guna2Panel7);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -201,6 +223,7 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            this.guna2Panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -218,5 +241,7 @@
         private Guna.UI2.WinForms.Guna2Button addStocksBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private adminUserControls.AddStocks addStocks1;
     }
 }
