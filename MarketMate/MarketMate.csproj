@@ -191,6 +191,12 @@
     <Compile Include="adminUserControls\AddProducts.Designer.cs">
       <DependentUpon>AddProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminUserControls\AddStocks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\AddStocks.Designer.cs">
+      <DependentUpon>AddStocks.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminUserControls\ManageCashiers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -236,6 +242,9 @@
     <EmbeddedResource Include="adminUserControls\AddProducts.resx">
       <DependentUpon>AddProducts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\AddStocks.resx">
+      <DependentUpon>AddStocks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\ManageCashiers.resx">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guna.UI2.dll" />
+    <None Include="Resources\products.png" />
     <None Include="Resources\supermaket.png" />
     <None Include="Resources\cash-counter.png" />
     <None Include="Resources\cashier.png" />

@@ -40,8 +40,8 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.manageCashiers1 = new MarketMate.adminUserControls.ManageCashiers();
             this.addCashiers1 = new MarketMate.adminUserControls.AddCashiers();
+            this.manageCashiers1 = new MarketMate.adminUserControls.ManageCashiers();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -202,19 +202,21 @@
             this.panelContainer.Size = new System.Drawing.Size(1040, 505);
             this.panelContainer.TabIndex = 1;
             // 
-            // manageCashiers1
-            // 
-            this.manageCashiers1.Location = new System.Drawing.Point(0, 0);
-            this.manageCashiers1.Name = "manageCashiers1";
-            this.manageCashiers1.Size = new System.Drawing.Size(1040, 505);
-            this.manageCashiers1.TabIndex = 1;
-            // 
             // addCashiers1
             // 
+            this.addCashiers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addCashiers1.Location = new System.Drawing.Point(0, 0);
             this.addCashiers1.Name = "addCashiers1";
             this.addCashiers1.Size = new System.Drawing.Size(1040, 505);
             this.addCashiers1.TabIndex = 0;
+            // 
+            // manageCashiers1
+            // 
+            this.manageCashiers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manageCashiers1.Location = new System.Drawing.Point(0, 0);
+            this.manageCashiers1.Name = "manageCashiers1";
+            this.manageCashiers1.Size = new System.Drawing.Size(1040, 505);
+            this.manageCashiers1.TabIndex = 1;
             // 
             // AdminDashboard
             // 
