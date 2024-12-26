@@ -283,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Guna.UI2.dll" />
+    <None Include="Resources\products %281%29.png" />
     <None Include="Resources\products.png" />
     <None Include="Resources\supermaket.png" />
     <None Include="Resources\cash-counter.png" />

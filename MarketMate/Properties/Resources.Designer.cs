@@ -93,6 +93,16 @@ namespace MarketMate.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap products__1_ {
+            get {
+                object obj = ResourceManager.GetObject("products (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap supermaket {
             get {
                 object obj = ResourceManager.GetObject("supermaket", resourceCulture);
