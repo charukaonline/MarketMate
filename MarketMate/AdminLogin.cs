@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using spend_smart;
 
 namespace MarketMate
 {
@@ -24,6 +25,13 @@ namespace MarketMate
             UserSelectionForm UserSelectionForm = new UserSelectionForm();
             UserSelectionForm.Show();
             this.Hide();
+        }
+
+        public class User
+        {
+            public int UserID { get; set; }
+            public string Username { get; set; }
+            public string Password;
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -57,24 +65,36 @@ namespace MarketMate
                 {
                     conn.Open();
 
-                    string query = "SELECT COUNT(*) FROM AdminUser WHERE Username = @Username AND AdminPass = @Password";
+                    string query = "SELECT AdminID, Username, AdminPass FROM AdminUser WHERE Username = @Username AND AdminPass = @Password";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
                         cmd.Parameters.AddWithValue("@Password", password);
 
-                        int result = (int)cmd.ExecuteScalar();
-                        if (result > 0)
+                        using (SqlDataReader reader = cmd.ExecuteReader())
                         {
-                            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            //Admin dashboard redirect
-                            AdminDashboard adminDashboard = new AdminDashboard();
-                            adminDashboard.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid username or PIN. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            if (reader.Read())
+                            {
+                                User user = new User
+                                {
+                                    UserID = reader.GetInt32(0),
+                                    Username = reader.GetString(1),
+                                    Password = reader.GetString(2)
+
+                                };
+                                if (user.Username == username && user.Password == password)
+                                {
+                                    MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    UserSession.AdminStartSession(user.UserID, user.Username);
+                                    AdminDashboard adminDashboard = new AdminDashboard();
+                                    adminDashboard.Show();
+                                    this.Hide();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid username or PIN. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
                         }
                     }
                 }
