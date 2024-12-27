@@ -52,7 +52,7 @@ namespace MarketMate.adminUserControls
                     try
                     {
                         conn.Open();
-                        string query = "INSERT INTO Cashier (Name, Username, Password, Role) VALUES (@CashierName, @Username, @Password, @UserRole)";
+                        string query = "INSERT INTO Cashier (CashierName, Username, CashierPass, UserRole) VALUES (@CashierName, @Username, @Password, @UserRole)";
                         using (SqlCommand cmd = new SqlCommand(query, conn))
                         {
                             cmd.Parameters.AddWithValue("@CashierName", cName);
