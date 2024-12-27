@@ -224,6 +224,7 @@
     <Compile Include="UserSelectionForm.Designer.cs">
       <DependentUpon>UserSelectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
