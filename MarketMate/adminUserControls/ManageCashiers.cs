@@ -51,7 +51,7 @@ namespace MarketMate.adminUserControls
         {
             SqlConnection conn = dbConn.GetConnection();
 
-            string query = "SELECT CashierID AS [User ID], Name AS [Name], Username AS [Username], Password AS [Password], Role AS [Role] FROM Cashier";
+            string query = "SELECT CashierID AS [User ID], CashierName AS [Name], Username AS [Username], CashierPass AS [Password], UserRole AS [Role] FROM Cashier";
             using (SqlCommand command = new SqlCommand(query, conn))
             {
                 try
@@ -110,7 +110,7 @@ namespace MarketMate.adminUserControls
             string role = userRoleCombo.SelectedItem.ToString();
             // Update the record in the database
             SqlConnection conn = dbConn.GetConnection();
-            string query = "UPDATE Cashier SET Name = @Name, Username = @Username, Password = @Password, Role = @Role WHERE CashierID = @CashierID";
+            string query = "UPDATE Cashier SET CashierName = @Name, Username = @Username, CashierPass = @Password, UserRole = @Role WHERE CashierID = @CashierID";
             using (SqlCommand command = new SqlCommand(query, conn))
             {
                 command.Parameters.AddWithValue("@Name", name);

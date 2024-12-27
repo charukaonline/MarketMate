@@ -63,7 +63,7 @@ namespace MarketMate
                 {
                     conn.Open();
 
-                    string query = "SELECT COUNT(*) FROM Cashier WHERE Username = @Username AND Password = @Password";
+                    string query = "SELECT COUNT(*) FROM Cashier WHERE Username = @Username AND CashierPass = @Password";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
