@@ -12,6 +12,9 @@ namespace spend_smart
         public static int CurrentAdminID { get; private set; }
         public static string CurrentAdminUsername { get; private set; }
 
+        public static int CurrentCashierID { get; private set; }
+        public static string CurrentCashierUsername { get; private set; }
+
         public static void AdminStartSession(int userID, string username)
         {
             CurrentAdminID = userID;
@@ -22,6 +25,18 @@ namespace spend_smart
         {
             CurrentAdminID = 0;
             CurrentAdminUsername = null;
+        }
+
+        public static void CashierStartSession(int userID, string username)
+        {
+            CurrentCashierID = userID;
+            CurrentCashierUsername = username;
+        }
+
+        public static void CashierEndSession()
+        {
+            CurrentCashierID = 0;
+            CurrentCashierUsername = null;
         }
     }
 
