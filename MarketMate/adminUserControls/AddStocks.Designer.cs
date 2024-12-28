@@ -33,14 +33,12 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cashierPass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cashierUName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.quantityTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.submitBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.userRoleCombo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.supplierCombo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cashierName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.productIdTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -100,14 +98,12 @@
             // 
             // guna2Panel6
             // 
-            this.guna2Panel6.Controls.Add(this.cashierPass);
-            this.guna2Panel6.Controls.Add(this.cashierUName);
+            this.guna2Panel6.Controls.Add(this.quantityTxt);
             this.guna2Panel6.Controls.Add(this.submitBtn);
-            this.guna2Panel6.Controls.Add(this.userRoleCombo);
+            this.guna2Panel6.Controls.Add(this.supplierCombo);
             this.guna2Panel6.Controls.Add(this.label5);
             this.guna2Panel6.Controls.Add(this.label4);
-            this.guna2Panel6.Controls.Add(this.cashierName);
-            this.guna2Panel6.Controls.Add(this.label3);
+            this.guna2Panel6.Controls.Add(this.productIdTxt);
             this.guna2Panel6.Controls.Add(this.label2);
             this.guna2Panel6.Location = new System.Drawing.Point(76, 0);
             this.guna2Panel6.Name = "guna2Panel6";
@@ -115,55 +111,30 @@
             this.guna2Panel6.Size = new System.Drawing.Size(537, 445);
             this.guna2Panel6.TabIndex = 0;
             // 
-            // cashierPass
+            // quantityTxt
             // 
-            this.cashierPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cashierPass.DefaultText = "";
-            this.cashierPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cashierPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cashierPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierPass.DisabledState.Parent = this.cashierPass;
-            this.cashierPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierPass.FocusedState.Parent = this.cashierPass;
-            this.cashierPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cashierPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierPass.HoverState.Parent = this.cashierPass;
-            this.cashierPass.Location = new System.Drawing.Point(74, 200);
-            this.cashierPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cashierPass.Name = "cashierPass";
-            this.cashierPass.PasswordChar = '*';
-            this.cashierPass.PlaceholderText = "";
-            this.cashierPass.SelectedText = "";
-            this.cashierPass.ShadowDecoration.Parent = this.cashierPass;
-            this.cashierPass.Size = new System.Drawing.Size(393, 43);
-            this.cashierPass.TabIndex = 18;
-            // 
-            // cashierUName
-            // 
-            this.cashierUName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cashierUName.DefaultText = "";
-            this.cashierUName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cashierUName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cashierUName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierUName.DisabledState.Parent = this.cashierUName;
-            this.cashierUName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierUName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierUName.FocusedState.Parent = this.cashierUName;
-            this.cashierUName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierUName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cashierUName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierUName.HoverState.Parent = this.cashierUName;
-            this.cashierUName.Location = new System.Drawing.Point(74, 127);
-            this.cashierUName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cashierUName.Name = "cashierUName";
-            this.cashierUName.PasswordChar = '\0';
-            this.cashierUName.PlaceholderText = "";
-            this.cashierUName.SelectedText = "";
-            this.cashierUName.ShadowDecoration.Parent = this.cashierUName;
-            this.cashierUName.Size = new System.Drawing.Size(393, 43);
-            this.cashierUName.TabIndex = 17;
+            this.quantityTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.quantityTxt.DefaultText = "";
+            this.quantityTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.quantityTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.quantityTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.quantityTxt.DisabledState.Parent = this.quantityTxt;
+            this.quantityTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.quantityTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.quantityTxt.FocusedState.Parent = this.quantityTxt;
+            this.quantityTxt.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantityTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.quantityTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.quantityTxt.HoverState.Parent = this.quantityTxt;
+            this.quantityTxt.Location = new System.Drawing.Point(69, 174);
+            this.quantityTxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.quantityTxt.Name = "quantityTxt";
+            this.quantityTxt.PasswordChar = '\0';
+            this.quantityTxt.PlaceholderText = "";
+            this.quantityTxt.SelectedText = "";
+            this.quantityTxt.ShadowDecoration.Parent = this.quantityTxt;
+            this.quantityTxt.Size = new System.Drawing.Size(393, 43);
+            this.quantityTxt.TabIndex = 18;
             // 
             // submitBtn
             // 
@@ -173,100 +144,89 @@
             this.submitBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitBtn.ForeColor = System.Drawing.Color.White;
             this.submitBtn.HoverState.Parent = this.submitBtn;
-            this.submitBtn.Location = new System.Drawing.Point(74, 352);
+            this.submitBtn.Location = new System.Drawing.Point(69, 326);
             this.submitBtn.Name = "submitBtn";
             this.submitBtn.ShadowDecoration.Parent = this.submitBtn;
             this.submitBtn.Size = new System.Drawing.Size(180, 45);
             this.submitBtn.TabIndex = 16;
             this.submitBtn.Text = "Add Stocks";
+            this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
             // 
-            // userRoleCombo
+            // supplierCombo
             // 
-            this.userRoleCombo.BackColor = System.Drawing.Color.Transparent;
-            this.userRoleCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.userRoleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.userRoleCombo.FocusedColor = System.Drawing.Color.Empty;
-            this.userRoleCombo.FocusedState.Parent = this.userRoleCombo;
-            this.userRoleCombo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRoleCombo.ForeColor = System.Drawing.Color.Black;
-            this.userRoleCombo.FormattingEnabled = true;
-            this.userRoleCombo.HoverState.Parent = this.userRoleCombo;
-            this.userRoleCombo.ItemHeight = 30;
-            this.userRoleCombo.Items.AddRange(new object[] {
-            "Cashier",
-            "Supervisor"});
-            this.userRoleCombo.ItemsAppearance.Parent = this.userRoleCombo;
-            this.userRoleCombo.Location = new System.Drawing.Point(74, 272);
-            this.userRoleCombo.Name = "userRoleCombo";
-            this.userRoleCombo.ShadowDecoration.Parent = this.userRoleCombo;
-            this.userRoleCombo.Size = new System.Drawing.Size(393, 36);
-            this.userRoleCombo.StartIndex = 0;
-            this.userRoleCombo.TabIndex = 15;
+            this.supplierCombo.BackColor = System.Drawing.Color.Transparent;
+            this.supplierCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.supplierCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.supplierCombo.FocusedColor = System.Drawing.Color.Empty;
+            this.supplierCombo.FocusedState.Parent = this.supplierCombo;
+            this.supplierCombo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierCombo.ForeColor = System.Drawing.Color.Black;
+            this.supplierCombo.FormattingEnabled = true;
+            this.supplierCombo.HoverState.Parent = this.supplierCombo;
+            this.supplierCombo.IntegralHeight = false;
+            this.supplierCombo.ItemHeight = 30;
+            this.supplierCombo.ItemsAppearance.Parent = this.supplierCombo;
+            this.supplierCombo.Location = new System.Drawing.Point(69, 253);
+            this.supplierCombo.Name = "supplierCombo";
+            this.supplierCombo.ShadowDecoration.Parent = this.supplierCombo;
+            this.supplierCombo.Size = new System.Drawing.Size(393, 36);
+            this.supplierCombo.StartIndex = 0;
+            this.supplierCombo.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(71, 251);
+            this.label5.Location = new System.Drawing.Point(66, 232);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 18);
+            this.label5.Size = new System.Drawing.Size(106, 18);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Category";
+            this.label5.Text = "Select Supplier";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(71, 179);
+            this.label4.Location = new System.Drawing.Point(66, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 18);
+            this.label4.Size = new System.Drawing.Size(107, 18);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Reorder Level";
+            this.label4.Text = "Quantity Added";
             // 
-            // cashierName
+            // productIdTxt
             // 
-            this.cashierName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cashierName.DefaultText = "";
-            this.cashierName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cashierName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cashierName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierName.DisabledState.Parent = this.cashierName;
-            this.cashierName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cashierName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierName.FocusedState.Parent = this.cashierName;
-            this.cashierName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cashierName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cashierName.HoverState.Parent = this.cashierName;
-            this.cashierName.Location = new System.Drawing.Point(74, 60);
-            this.cashierName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cashierName.Name = "cashierName";
-            this.cashierName.PasswordChar = '\0';
-            this.cashierName.PlaceholderText = "";
-            this.cashierName.SelectedText = "";
-            this.cashierName.ShadowDecoration.Parent = this.cashierName;
-            this.cashierName.Size = new System.Drawing.Size(393, 43);
-            this.cashierName.TabIndex = 11;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 18);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Price";
+            this.productIdTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.productIdTxt.DefaultText = "";
+            this.productIdTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.productIdTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.productIdTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.productIdTxt.DisabledState.Parent = this.productIdTxt;
+            this.productIdTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.productIdTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.productIdTxt.FocusedState.Parent = this.productIdTxt;
+            this.productIdTxt.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productIdTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.productIdTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.productIdTxt.HoverState.Parent = this.productIdTxt;
+            this.productIdTxt.Location = new System.Drawing.Point(69, 92);
+            this.productIdTxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productIdTxt.Name = "productIdTxt";
+            this.productIdTxt.PasswordChar = '\0';
+            this.productIdTxt.PlaceholderText = "";
+            this.productIdTxt.SelectedText = "";
+            this.productIdTxt.ShadowDecoration.Parent = this.productIdTxt;
+            this.productIdTxt.Size = new System.Drawing.Size(393, 43);
+            this.productIdTxt.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 39);
+            this.label2.Location = new System.Drawing.Point(66, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 18);
+            this.label2.Size = new System.Drawing.Size(78, 18);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Product Description";
+            this.label2.Text = "Product ID";
             // 
             // guna2Panel1
             // 
@@ -329,14 +289,12 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private Guna.UI2.WinForms.Guna2TextBox cashierPass;
-        private Guna.UI2.WinForms.Guna2TextBox cashierUName;
+        private Guna.UI2.WinForms.Guna2TextBox quantityTxt;
         private Guna.UI2.WinForms.Guna2Button submitBtn;
-        private Guna.UI2.WinForms.Guna2ComboBox userRoleCombo;
+        private Guna.UI2.WinForms.Guna2ComboBox supplierCombo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox cashierName;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox productIdTxt;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
