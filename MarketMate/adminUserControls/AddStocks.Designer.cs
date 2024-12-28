@@ -129,7 +129,7 @@
             this.quantityTxt.Location = new System.Drawing.Point(69, 174);
             this.quantityTxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.quantityTxt.Name = "quantityTxt";
-            this.quantityTxt.PasswordChar = '*';
+            this.quantityTxt.PasswordChar = '\0';
             this.quantityTxt.PlaceholderText = "";
             this.quantityTxt.SelectedText = "";
             this.quantityTxt.ShadowDecoration.Parent = this.quantityTxt;
@@ -150,6 +150,7 @@
             this.submitBtn.Size = new System.Drawing.Size(180, 45);
             this.submitBtn.TabIndex = 16;
             this.submitBtn.Text = "Add Stocks";
+            this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
             // 
             // supplierCombo
             // 
@@ -162,6 +163,7 @@
             this.supplierCombo.ForeColor = System.Drawing.Color.Black;
             this.supplierCombo.FormattingEnabled = true;
             this.supplierCombo.HoverState.Parent = this.supplierCombo;
+            this.supplierCombo.IntegralHeight = false;
             this.supplierCombo.ItemHeight = 30;
             this.supplierCombo.ItemsAppearance.Parent = this.supplierCombo;
             this.supplierCombo.Location = new System.Drawing.Point(69, 253);
