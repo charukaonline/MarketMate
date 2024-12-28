@@ -41,12 +41,13 @@ namespace MarketMate
         {
             addCashiers1.Hide();
             manageCashiers1.Show();
+            manageCashiers1.RefreshData();
+
         }
 
         private void RefreshTimer_Tick(object sender, EventArgs e)
         {
-            //addCashiers1.RefreshData();
-            manageCashiers1.RefreshData();
+            
         }
 
         private void manageProductsBtn_Click(object sender, EventArgs e)
