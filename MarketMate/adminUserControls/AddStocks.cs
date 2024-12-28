@@ -32,30 +32,26 @@ namespace MarketMate.adminUserControls
         {
             using (SqlConnection conn = dbConn.GetConnection())
             {
-                string query = "SELECT SupplierName FROM Supplier"; // Adjust to match your table structure
+                string query = "SELECT SupplierName FROM Supplier";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     try
                     {
                         conn.Open();
                         SqlDataReader reader = cmd.ExecuteReader();
-                        // Clear existing items to avoid duplicates
+
                         supplierCombo.Items.Clear();
-                        // Populate the ComboBox
+
+                        supplierCombo.Items.Add("-- Select a Supplier --");
+
                         while (reader.Read())
                         {
                             supplierCombo.Items.Add(reader["SupplierName"].ToString());
                         }
+
                         reader.Close();
-                        // Set the first item as a default value (optional)
-                        if (supplierCombo.Items.Count > 0)
-                        {
-                            supplierCombo.SelectedIndex = 0; // Select the first item by default
-                        }
-                        else
-                        {
-                            supplierCombo.Text = "-- No Suppliers Available --";
-                        }
+
+                        supplierCombo.SelectedIndex = 0;
                     }
                     catch (Exception ex)
                     {
@@ -65,9 +61,9 @@ namespace MarketMate.adminUserControls
             }
         }
 
+
         private void submitBtn_Click(object sender, EventArgs e)
         {
-            // Validate the inputs before proceeding
             if (string.IsNullOrWhiteSpace(productIdTxt.Text) || !int.TryParse(productIdTxt.Text, out int productId))
             {
                 MessageBox.Show("Please enter a valid Product ID.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -80,13 +76,12 @@ namespace MarketMate.adminUserControls
                 return;
             }
 
-            if (supplierCombo.SelectedItem == null || supplierCombo.SelectedIndex == 0)
+            if (supplierCombo.SelectedItem == null || supplierCombo.SelectedItem.ToString() == "-- Select a Supplier --")
             {
                 MessageBox.Show("Please select a valid supplier.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Get the selected supplier name
             string selectedSupplier = supplierCombo.SelectedItem.ToString();
 
             // Insert data into the Stock table
@@ -110,14 +105,12 @@ namespace MarketMate.adminUserControls
 
                         conn.Open();
 
-                        // Execute the query
                         int result = cmd.ExecuteNonQuery();
 
                         if (result > 0)
                         {
                             MessageBox.Show("Stock record added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            // Clear the input fields
                             productIdTxt.Clear();
                             quantityTxt.Clear();
                             supplierCombo.SelectedIndex = 0;
