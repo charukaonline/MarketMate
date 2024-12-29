@@ -133,6 +133,7 @@
             this.printBillBtn.Size = new System.Drawing.Size(180, 45);
             this.printBillBtn.TabIndex = 15;
             this.printBillBtn.Text = "Print Bill";
+            this.printBillBtn.Click += new System.EventHandler(this.printBillBtn_Click);
             // 
             // orderDetailsGrid
             // 
