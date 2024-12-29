@@ -18,11 +18,6 @@ namespace MarketMate
             InitializeComponent();
         }
 
-        private void proceedBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void addItemsBtn_Click(object sender, EventArgs e)
         {
             string productId = productIdTxt.Text;
@@ -55,7 +50,6 @@ namespace MarketMate
                 {
                     connection.Open();
 
-                    // Fetch Product Details
                     string productName = string.Empty;
                     decimal unitPrice = 0;
 
@@ -75,10 +69,9 @@ namespace MarketMate
                                 MessageBox.Show("Product not found!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 return;
                             }
-                        } // Automatically closes the productReader
+                        }
                     }
 
-                    // Fetch Discount Details
                     decimal discountValue = 0;
                     using (SqlCommand discountCommand = new SqlCommand(discountQuery, connection))
                     {
@@ -100,24 +93,105 @@ namespace MarketMate
                                     discountValue = (unitPrice * discount / 100) * quantity;
                                 }
                             }
-                        } // Automatically closes the discountReader
+                        }
                     }
 
-                    // Calculate Total Price and Add to Grid
                     decimal totalPrice = (unitPrice * quantity) - discountValue;
-                    orderGrid.Rows.Add(productId, productName, quantity, discountValue, totalPrice);
+                    orderGrid.Rows.Add(productId, productName, unitPrice, quantity, discountValue, totalPrice);
 
-                    MessageBox.Show(
-                        $"Item added to the order. Discount applied: {discountValue:C}.",
-                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Clear input fields
                     productIdTxt.Text = "";
                     quantityTxt.Text = "";
                     productIdTxt.Focus();
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void proceedBtn_Click(object sender, EventArgs e)
+        {
+            decimal totalPrice = 0;
+            decimal totalDiscount = 0;
+
+            DataTable orderDetails = new DataTable();
+            orderDetails.Columns.Add("ProductID", typeof(string));
+            orderDetails.Columns.Add("ProductName", typeof(string));
+            orderDetails.Columns.Add("UnitPrice", typeof(decimal));
+            orderDetails.Columns.Add("Quantity", typeof(int));
+            orderDetails.Columns.Add("Discount", typeof(decimal));
+            orderDetails.Columns.Add("TotalPrice", typeof(decimal));
+
+            // Populate orderDetails with data from orderGrid
+            foreach (DataGridViewRow row in orderGrid.Rows)
+            {
+                if (row.Cells["product_id"].Value != null)
+                {
+                    string productId = row.Cells["product_id"].Value.ToString();
+                    string productName = row.Cells["product_name"].Value.ToString();
+                    decimal unitPrice = Convert.ToDecimal(row.Cells["unit_price"].Value);
+                    int quantity = Convert.ToInt32(row.Cells["quantity"].Value);
+                    decimal discount = Convert.ToDecimal(row.Cells["discount"].Value);
+                    decimal total = Convert.ToDecimal(row.Cells["total_price"].Value);
+
+                    totalPrice += total;
+                    totalDiscount += discount;
+
+                    orderDetails.Rows.Add(productId, productName, unitPrice, quantity, discount, total);
+                }
+            }
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    int orderId;
+
+                    string orderInsertQuery = @"
+                        DECLARE @InsertedOrders TABLE (OrderID INT);
+                        INSERT INTO [Orders] ([SaleDateTime], [TotalPrice], [TotalDiscount], [CustomerID], [CashierID])
+                        OUTPUT INSERTED.OrderID INTO @InsertedOrders
+                        VALUES (GETDATE(), @TotalPrice, @TotalDiscount, @CustomerID, @CashierID);
+                        SELECT OrderID FROM @InsertedOrders;";
+
+                    using (SqlCommand orderCommand = new SqlCommand(orderInsertQuery, connection, transaction))
+                    {
+                        orderCommand.Parameters.AddWithValue("@TotalPrice", totalPrice);
+                        orderCommand.Parameters.AddWithValue("@TotalDiscount", totalDiscount);
+                        orderCommand.Parameters.AddWithValue("@CustomerID", DBNull.Value);
+                        orderCommand.Parameters.AddWithValue("@CashierID", 1);
+
+                        orderId = Convert.ToInt32(orderCommand.ExecuteScalar());
+                    }
+
+                    string orderItemInsertQuery = @"
+                        INSERT INTO [OrderItem] ([OrderID], [ProductID], [Quantity])
+                        VALUES (@OrderID, @ProductID, @Quantity)";
+
+                    foreach (DataRow detailRow in orderDetails.Rows)
+                    {
+                        using (SqlCommand orderItemCommand = new SqlCommand(orderItemInsertQuery, connection, transaction))
+                        {
+                            orderItemCommand.Parameters.AddWithValue("@OrderID", orderId);
+                            orderItemCommand.Parameters.AddWithValue("@ProductID", detailRow["ProductID"]);
+                            orderItemCommand.Parameters.AddWithValue("@Quantity", detailRow["Quantity"]);
+                            orderItemCommand.ExecuteNonQuery();
+                        }
+                    }
+
+                    transaction.Commit();
+                    MessageBox.Show("Order saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    TotalAmount totalAmountForm = new TotalAmount(totalPrice, totalDiscount, orderId, orderDetails);
+                    totalAmountForm.Show();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
                     MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
