@@ -31,29 +31,35 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.orderGrid = new System.Windows.Forms.DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.printBill = new Guna.UI2.WinForms.Guna2Button();
+            this.proceedBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.addItemsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.discountTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.quantityTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.productIdTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.order_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.totAmountlbl = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total_discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderGrid)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel2
@@ -91,26 +97,25 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Items";
             // 
-            // dataGridView1
+            // orderGrid
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.order_id,
+            this.orderGrid.AllowUserToOrderColumns = true;
+            this.orderGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.orderGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.product_id,
             this.product_name,
             this.quantity,
-            this.total_price,
-            this.total_discount});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1426, 441);
-            this.dataGridView1.TabIndex = 3;
+            this.discount,
+            this.total_price});
+            this.orderGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orderGrid.Location = new System.Drawing.Point(0, 0);
+            this.orderGrid.Name = "orderGrid";
+            this.orderGrid.RowHeadersWidth = 62;
+            this.orderGrid.RowTemplate.Height = 28;
+            this.orderGrid.Size = new System.Drawing.Size(1426, 420);
+            this.orderGrid.TabIndex = 3;
             // 
             // guna2Panel1
             // 
@@ -120,58 +125,58 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(6);
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1426, 48);
+            this.guna2Panel1.Size = new System.Drawing.Size(1426, 55);
             this.guna2Panel1.TabIndex = 5;
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.dataGridView1);
+            this.guna2Panel3.Controls.Add(this.orderGrid);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 155);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 162);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1426, 441);
+            this.guna2Panel3.Size = new System.Drawing.Size(1426, 420);
             this.guna2Panel3.TabIndex = 6;
             // 
-            // printBill
+            // proceedBtn
             // 
-            this.printBill.BorderRadius = 10;
-            this.printBill.CheckedState.Parent = this.printBill;
-            this.printBill.CustomImages.Parent = this.printBill;
-            this.printBill.FillColor = System.Drawing.Color.SeaGreen;
-            this.printBill.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBill.ForeColor = System.Drawing.Color.White;
-            this.printBill.HoverState.Parent = this.printBill;
-            this.printBill.Location = new System.Drawing.Point(215, 147);
-            this.printBill.Name = "printBill";
-            this.printBill.ShadowDecoration.Parent = this.printBill;
-            this.printBill.Size = new System.Drawing.Size(180, 55);
-            this.printBill.TabIndex = 7;
-            this.printBill.Text = "Print Bill";
+            this.proceedBtn.BorderRadius = 10;
+            this.proceedBtn.CheckedState.Parent = this.proceedBtn;
+            this.proceedBtn.CustomImages.Parent = this.proceedBtn;
+            this.proceedBtn.FillColor = System.Drawing.Color.SeaGreen;
+            this.proceedBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceedBtn.ForeColor = System.Drawing.Color.White;
+            this.proceedBtn.HoverState.Parent = this.proceedBtn;
+            this.proceedBtn.Location = new System.Drawing.Point(224, 181);
+            this.proceedBtn.Name = "proceedBtn";
+            this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
+            this.proceedBtn.Size = new System.Drawing.Size(180, 49);
+            this.proceedBtn.TabIndex = 7;
+            this.proceedBtn.Text = "Proceed";
+            this.proceedBtn.Click += new System.EventHandler(this.proceedBtn_Click);
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Controls.Add(this.printBill);
+            this.guna2Panel4.Controls.Add(this.guna2Panel6);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel4.Location = new System.Drawing.Point(1010, 596);
+            this.guna2Panel4.Location = new System.Drawing.Point(1010, 582);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(416, 221);
+            this.guna2Panel4.Size = new System.Drawing.Size(416, 235);
             this.guna2Panel4.TabIndex = 8;
             // 
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.Honeydew;
             this.guna2Panel5.Controls.Add(this.addItemsBtn);
-            this.guna2Panel5.Controls.Add(this.discountTxt);
             this.guna2Panel5.Controls.Add(this.quantityTxt);
             this.guna2Panel5.Controls.Add(this.productIdTxt);
             this.guna2Panel5.Controls.Add(this.label3);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 596);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 582);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(1004, 221);
+            this.guna2Panel5.Size = new System.Drawing.Size(1004, 235);
             this.guna2Panel5.TabIndex = 8;
             // 
             // addItemsBtn
@@ -183,39 +188,13 @@
             this.addItemsBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addItemsBtn.ForeColor = System.Drawing.Color.White;
             this.addItemsBtn.HoverState.Parent = this.addItemsBtn;
-            this.addItemsBtn.Location = new System.Drawing.Point(771, 147);
+            this.addItemsBtn.Location = new System.Drawing.Point(762, 102);
             this.addItemsBtn.Name = "addItemsBtn";
             this.addItemsBtn.ShadowDecoration.Parent = this.addItemsBtn;
             this.addItemsBtn.Size = new System.Drawing.Size(180, 55);
             this.addItemsBtn.TabIndex = 13;
             this.addItemsBtn.Text = "Add Items";
-            // 
-            // discountTxt
-            // 
-            this.discountTxt.BorderRadius = 10;
-            this.discountTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.discountTxt.DefaultText = "";
-            this.discountTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.discountTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.discountTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.discountTxt.DisabledState.Parent = this.discountTxt;
-            this.discountTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.discountTxt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.discountTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.discountTxt.FocusedState.Parent = this.discountTxt;
-            this.discountTxt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discountTxt.ForeColor = System.Drawing.Color.White;
-            this.discountTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.discountTxt.HoverState.Parent = this.discountTxt;
-            this.discountTxt.Location = new System.Drawing.Point(54, 149);
-            this.discountTxt.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.discountTxt.Name = "discountTxt";
-            this.discountTxt.PasswordChar = '\0';
-            this.discountTxt.PlaceholderText = "Total Discount";
-            this.discountTxt.SelectedText = "";
-            this.discountTxt.ShadowDecoration.Parent = this.discountTxt;
-            this.discountTxt.Size = new System.Drawing.Size(308, 55);
-            this.discountTxt.TabIndex = 9;
+            this.addItemsBtn.Click += new System.EventHandler(this.addItemsBtn_Click);
             // 
             // quantityTxt
             // 
@@ -234,7 +213,7 @@
             this.quantityTxt.ForeColor = System.Drawing.Color.White;
             this.quantityTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.quantityTxt.HoverState.Parent = this.quantityTxt;
-            this.quantityTxt.Location = new System.Drawing.Point(401, 77);
+            this.quantityTxt.Location = new System.Drawing.Point(398, 102);
             this.quantityTxt.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.quantityTxt.Name = "quantityTxt";
             this.quantityTxt.PasswordChar = '\0';
@@ -261,7 +240,7 @@
             this.productIdTxt.ForeColor = System.Drawing.Color.White;
             this.productIdTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.productIdTxt.HoverState.Parent = this.productIdTxt;
-            this.productIdTxt.Location = new System.Drawing.Point(54, 77);
+            this.productIdTxt.Location = new System.Drawing.Point(54, 102);
             this.productIdTxt.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.productIdTxt.Name = "productIdTxt";
             this.productIdTxt.PasswordChar = '\0';
@@ -275,17 +254,104 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 18);
+            this.label3.Location = new System.Drawing.Point(49, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 29);
             this.label3.TabIndex = 12;
             this.label3.Text = "Add Items";
             // 
-            // order_id
+            // guna2Panel6
             // 
-            this.order_id.HeaderText = "Order ID";
-            this.order_id.MinimumWidth = 8;
-            this.order_id.Name = "order_id";
+            this.guna2Panel6.Controls.Add(this.proceedBtn);
+            this.guna2Panel6.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel6.Controls.Add(this.label7);
+            this.guna2Panel6.Controls.Add(this.totAmountlbl);
+            this.guna2Panel6.Controls.Add(this.label5);
+            this.guna2Panel6.Controls.Add(this.label6);
+            this.guna2Panel6.Controls.Add(this.label4);
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            this.guna2Panel6.Size = new System.Drawing.Size(416, 235);
+            this.guna2Panel6.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 26);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Total Amount: ";
+            // 
+            // totAmountlbl
+            // 
+            this.totAmountlbl.AutoSize = true;
+            this.totAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totAmountlbl.Location = new System.Drawing.Point(219, 27);
+            this.totAmountlbl.Name = "totAmountlbl";
+            this.totAmountlbl.Size = new System.Drawing.Size(72, 26);
+            this.totAmountlbl.TabIndex = 8;
+            this.totAmountlbl.Text = "$ 0.00";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(16, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(163, 26);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Amount Given: ";
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(224, 69);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "$ 0.00";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(162, 38);
+            this.guna2TextBox1.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 131);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(153, 26);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Total Amount: ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(219, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 26);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "$ 0.00";
             // 
             // product_id
             // 
@@ -305,17 +371,17 @@
             this.quantity.MinimumWidth = 8;
             this.quantity.Name = "quantity";
             // 
+            // discount
+            // 
+            this.discount.HeaderText = "Discount";
+            this.discount.MinimumWidth = 8;
+            this.discount.Name = "discount";
+            // 
             // total_price
             // 
             this.total_price.HeaderText = "Total Price";
             this.total_price.MinimumWidth = 8;
             this.total_price.Name = "total_price";
-            // 
-            // total_discount
-            // 
-            this.total_discount.HeaderText = "Total Discount";
-            this.total_discount.MinimumWidth = 8;
-            this.total_discount.Name = "total_discount";
             // 
             // CashierDashboard
             // 
@@ -334,13 +400,15 @@
             this.Text = "CashierDashboard";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderGrid)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -350,22 +418,27 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView orderGrid;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button printBill;
+        private Guna.UI2.WinForms.Guna2Button proceedBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Button addItemsBtn;
-        private Guna.UI2.WinForms.Guna2TextBox discountTxt;
         private Guna.UI2.WinForms.Guna2TextBox quantityTxt;
         private Guna.UI2.WinForms.Guna2TextBox productIdTxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn order_id;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label totAmountlbl;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn product_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn total_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn total_discount;
     }
 }
