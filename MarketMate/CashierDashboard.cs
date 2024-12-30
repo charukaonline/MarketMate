@@ -114,6 +114,9 @@ namespace MarketMate
         {
             decimal totalPrice = 0;
             decimal totalDiscount = 0;
+            int.TryParse(customer_id.Text, out int customerId);
+
+
 
             DataTable orderDetails = new DataTable();
             orderDetails.Columns.Add("ProductID", typeof(string));
@@ -162,7 +165,7 @@ namespace MarketMate
                     {
                         orderCommand.Parameters.AddWithValue("@TotalPrice", totalPrice);
                         orderCommand.Parameters.AddWithValue("@TotalDiscount", totalDiscount);
-                        orderCommand.Parameters.AddWithValue("@CustomerID", DBNull.Value);
+                        orderCommand.Parameters.AddWithValue("@CustomerID", customerId);
                         orderCommand.Parameters.AddWithValue("@CashierID", 1);
 
                         orderId = Convert.ToInt32(orderCommand.ExecuteScalar());
@@ -196,6 +199,5 @@ namespace MarketMate
                 }
             }
         }
-
     }
 }
