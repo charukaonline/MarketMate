@@ -13,6 +13,7 @@ namespace MarketMate
         private readonly decimal totalDiscount;
         private readonly int orderId;
         private readonly DataTable orderDetails;
+        private int cashierId;
 
         public TotalAmount(decimal totalPrice, decimal totalDiscount, int orderId, DataTable orderDetails)
         {
@@ -30,6 +31,8 @@ namespace MarketMate
             LoadOrderDetails();
 
             receivedMoneyTxt.TextChanged += ReceivedMoneyTxt_TextChanged;
+
+            cashierId = UserSession.CurrentCashierID;
         }
 
         private void LoadOrderDetails()
@@ -50,7 +53,6 @@ namespace MarketMate
                         if (reader.Read())
                         {
                             dateTimelbl.Text = Convert.ToDateTime(reader["SaleDateTime"]).ToString("MM/dd/yyyy HH:mm:ss");
-                            cashier_id.Text = reader["CashierID"].ToString();
                         }
                         else
                         {
