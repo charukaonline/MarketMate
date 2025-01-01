@@ -68,7 +68,6 @@ namespace MarketMate.adminUserControls
 
                         showSuppliers.DataSource = dt;
 
-                        // Optional: Adjust DataGridView properties
                         showSuppliers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                         showSuppliers.AllowUserToAddRows = false; 
                         showSuppliers.ReadOnly = true; 
