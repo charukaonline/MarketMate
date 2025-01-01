@@ -230,6 +230,12 @@
     <Compile Include="adminUserControls\ManageCashiers.Designer.cs">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminUserControls\ManageSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\ManageSuppliers.Designer.cs">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
+    </Compile>
     <Compile Include="CashierDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\ManageCashiers.resx">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\ManageSuppliers.resx">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CashierDashboard.resx">
       <DependentUpon>CashierDashboard.cs</DependentUpon>
