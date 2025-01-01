@@ -16,5 +16,23 @@ namespace MarketMate.adminForms
         {
             InitializeComponent();
         }
+
+        private void addStocksBtn_Click(object sender, EventArgs e)
+        {
+            addStocks1.Show();
+            addSuppliers1.Hide();
+        }
+
+        private void ManageStock_Load(object sender, EventArgs e)
+        {
+            addStocks1.Show();
+            addSuppliers1.Hide();
+        }
+
+        private void addSuppliersBtn_Click(object sender, EventArgs e)
+        {
+            addSuppliers1.Show();
+            addStocks1.Hide();
+        }
     }
 }

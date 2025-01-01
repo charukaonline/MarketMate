@@ -41,12 +41,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cashier_id = new System.Windows.Forms.Label();
             this.dateTimelbl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,9 +82,9 @@
             this.totAmountlbl.Location = new System.Drawing.Point(114, 357);
             this.totAmountlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totAmountlbl.Name = "totAmountlbl";
-            this.totAmountlbl.Size = new System.Drawing.Size(48, 18);
+            this.totAmountlbl.Size = new System.Drawing.Size(69, 18);
             this.totAmountlbl.TabIndex = 11;
-            this.totAmountlbl.Text = "$ 0.00";
+            this.totAmountlbl.Text = "LKR 0.00";
             // 
             // label5
             // 
@@ -106,9 +104,9 @@
             this.discountlbl.Location = new System.Drawing.Point(115, 422);
             this.discountlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.discountlbl.Name = "discountlbl";
-            this.discountlbl.Size = new System.Drawing.Size(48, 18);
+            this.discountlbl.Size = new System.Drawing.Size(69, 18);
             this.discountlbl.TabIndex = 13;
-            this.discountlbl.Text = "$ 0.00";
+            this.discountlbl.Text = "LKR 0.00";
             // 
             // label4
             // 
@@ -131,7 +129,7 @@
             this.printBillBtn.ForeColor = System.Drawing.Color.White;
             this.printBillBtn.HoverState.Parent = this.printBillBtn;
             this.printBillBtn.Location = new System.Drawing.Point(275, 443);
-            this.printBillBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.printBillBtn.Margin = new System.Windows.Forms.Padding(2);
             this.printBillBtn.Name = "printBillBtn";
             this.printBillBtn.ShadowDecoration.Parent = this.printBillBtn;
             this.printBillBtn.Size = new System.Drawing.Size(120, 29);
@@ -143,7 +141,7 @@
             // 
             this.orderDetailsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderDetailsGrid.Location = new System.Drawing.Point(8, 155);
-            this.orderDetailsGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.orderDetailsGrid.Margin = new System.Windows.Forms.Padding(2);
             this.orderDetailsGrid.Name = "orderDetailsGrid";
             this.orderDetailsGrid.RowHeadersWidth = 62;
             this.orderDetailsGrid.RowTemplate.Height = 28;
@@ -157,9 +155,9 @@
             this.balancelbl.Location = new System.Drawing.Point(77, 455);
             this.balancelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.balancelbl.Name = "balancelbl";
-            this.balancelbl.Size = new System.Drawing.Size(48, 18);
+            this.balancelbl.Size = new System.Drawing.Size(69, 18);
             this.balancelbl.TabIndex = 10;
-            this.balancelbl.Text = "$ 0.00";
+            this.balancelbl.Text = "LKR 0.00";
             // 
             // label7
             // 
@@ -216,17 +214,6 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Market Mate";
             // 
-            // cashier_id
-            // 
-            this.cashier_id.AutoSize = true;
-            this.cashier_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashier_id.Location = new System.Drawing.Point(105, 75);
-            this.cashier_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cashier_id.Name = "cashier_id";
-            this.cashier_id.Size = new System.Drawing.Size(77, 18);
-            this.cashier_id.TabIndex = 20;
-            this.cashier_id.Text = "Cashier ID";
-            // 
             // dateTimelbl
             // 
             this.dateTimelbl.AutoSize = true;
@@ -271,17 +258,6 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Date and Time: ";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 75);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 18);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Cashier ID: ";
-            // 
             // TotalAmount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,12 +266,10 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cashier_id);
             this.Controls.Add(this.dateTimelbl);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.orderDetailsGrid);
             this.Controls.Add(this.printBillBtn);
             this.Controls.Add(this.receivedMoneyTxt);
@@ -307,7 +281,7 @@
             this.Controls.Add(this.discountlbl);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TotalAmount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TotalAmount";
@@ -332,11 +306,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label cashier_id;
         private System.Windows.Forms.Label dateTimelbl;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
     }
 }
