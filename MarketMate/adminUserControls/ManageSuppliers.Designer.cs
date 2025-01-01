@@ -33,7 +33,6 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.showSuppliers = new System.Windows.Forms.DataGridView();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.emailTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.phoneTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -92,7 +91,6 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.deleteBtn);
             this.guna2Panel3.Controls.Add(this.updateBtn);
             this.guna2Panel3.Controls.Add(this.nameTxt);
             this.guna2Panel3.Controls.Add(this.emailTxt);
@@ -105,22 +103,6 @@
             this.guna2Panel3.Size = new System.Drawing.Size(1040, 168);
             this.guna2Panel3.TabIndex = 3;
             // 
-            // deleteBtn
-            // 
-            this.deleteBtn.BorderRadius = 10;
-            this.deleteBtn.CheckedState.Parent = this.deleteBtn;
-            this.deleteBtn.CustomImages.Parent = this.deleteBtn;
-            this.deleteBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.deleteBtn.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.HoverState.Parent = this.deleteBtn;
-            this.deleteBtn.Location = new System.Drawing.Point(758, 86);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
-            this.deleteBtn.Size = new System.Drawing.Size(140, 36);
-            this.deleteBtn.TabIndex = 19;
-            this.deleteBtn.Text = "Delete";
-            // 
             // updateBtn
             // 
             this.updateBtn.BorderRadius = 10;
@@ -130,12 +112,13 @@
             this.updateBtn.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.White;
             this.updateBtn.HoverState.Parent = this.updateBtn;
-            this.updateBtn.Location = new System.Drawing.Point(758, 42);
+            this.updateBtn.Location = new System.Drawing.Point(810, 59);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.ShadowDecoration.Parent = this.updateBtn;
             this.updateBtn.Size = new System.Drawing.Size(140, 36);
             this.updateBtn.TabIndex = 20;
             this.updateBtn.Text = "Update";
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // emailTxt
             // 
@@ -279,7 +262,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.DataGridView showSuppliers;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button deleteBtn;
         private Guna.UI2.WinForms.Guna2Button updateBtn;
         private Guna.UI2.WinForms.Guna2TextBox emailTxt;
         private Guna.UI2.WinForms.Guna2TextBox phoneTxt;

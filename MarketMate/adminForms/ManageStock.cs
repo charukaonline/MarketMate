@@ -22,6 +22,7 @@ namespace MarketMate.adminForms
             addStocks1.Show();
             addSuppliers1.Hide();
             manageSuppliers1.Hide();
+            stockRecords1.Hide();
         }
 
         private void ManageStock_Load(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace MarketMate.adminForms
             addStocks1.Show();
             addSuppliers1.Hide();
             manageSuppliers1.Hide();
+            stockRecords1.Hide();
 
         }
 
@@ -37,15 +39,26 @@ namespace MarketMate.adminForms
             addSuppliers1.Show();
             addStocks1.Hide();
             manageSuppliers1.Hide();
+            stockRecords1.Hide();
         }
 
-        private void manageStocksBtn_Click(object sender, EventArgs e)
+        private void manageSuppliersBtn_Click(object sender, EventArgs e)
         {
             manageSuppliers1.Show();
             addStocks1.Hide();
             addSuppliers1.Hide();
+            stockRecords1.Hide();
 
             manageSuppliers1.RefreshData();
+        }
+
+        private void viewStockBtn_Click(object sender, EventArgs e)
+        {
+            stockRecords1.Show();
+            addStocks1.Hide();
+            addSuppliers1.Hide();
+            manageSuppliers1.Hide();
+            stockRecords1.RefreshData();
         }
     }
 }
