@@ -230,6 +230,12 @@
     <Compile Include="adminUserControls\ManageCashiers.Designer.cs">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminUserControls\ManageCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\ManageCategories.Designer.cs">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminUserControls\ManageSuppliers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\ManageCashiers.resx">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\ManageCategories.resx">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\ManageSuppliers.resx">
       <DependentUpon>ManageSuppliers.cs</DependentUpon>

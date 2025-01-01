@@ -21,6 +21,7 @@ namespace MarketMate.adminForms
         {
             addProducts1.Show();
             viewProducts1.Hide();
+            manageCategories1.Hide();
 
         }
 
@@ -28,13 +29,23 @@ namespace MarketMate.adminForms
         {
             addProducts1.Show();
             viewProducts1.Hide();
+            manageCategories1.Hide();
         }
 
         private void viewProductsBtn_Click(object sender, EventArgs e)
         {
             addProducts1.Hide();
             viewProducts1.Show();
+            manageCategories1.Hide();
             viewProducts1.RefreshData();
+        }
+
+        private void categoriesBtn_Click(object sender, EventArgs e)
+        {
+            addProducts1.Hide();
+            viewProducts1.Hide();
+            manageCategories1.Show();
+            manageCategories1.RefreshData();
         }
     }
 }
