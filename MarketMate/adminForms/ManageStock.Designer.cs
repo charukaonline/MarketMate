@@ -40,6 +40,7 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.addSuppliers1 = new MarketMate.adminUserControls.AddSuppliers();
             this.addStocks1 = new MarketMate.adminUserControls.AddStocks();
+            this.manageSuppliers1 = new MarketMate.adminUserControls.ManageSuppliers();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -86,6 +87,7 @@
             this.manageStocksBtn.Size = new System.Drawing.Size(166, 45);
             this.manageStocksBtn.TabIndex = 2;
             this.manageStocksBtn.Text = "Manage Suppliers";
+            this.manageStocksBtn.Click += new System.EventHandler(this.manageStocksBtn_Click);
             // 
             // guna2Panel5
             // 
@@ -162,6 +164,7 @@
             // 
             // guna2Panel7
             // 
+            this.guna2Panel7.Controls.Add(this.manageSuppliers1);
             this.guna2Panel7.Controls.Add(this.addSuppliers1);
             this.guna2Panel7.Controls.Add(this.addStocks1);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -186,6 +189,14 @@
             this.addStocks1.Name = "addStocks1";
             this.addStocks1.Size = new System.Drawing.Size(1040, 505);
             this.addStocks1.TabIndex = 0;
+            // 
+            // manageSuppliers1
+            // 
+            this.manageSuppliers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manageSuppliers1.Location = new System.Drawing.Point(0, 0);
+            this.manageSuppliers1.Name = "manageSuppliers1";
+            this.manageSuppliers1.Size = new System.Drawing.Size(1040, 505);
+            this.manageSuppliers1.TabIndex = 2;
             // 
             // ManageStock
             // 
@@ -225,5 +236,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private adminUserControls.AddStocks addStocks1;
         private adminUserControls.AddSuppliers addSuppliers1;
+        private adminUserControls.ManageSuppliers manageSuppliers1;
     }
 }

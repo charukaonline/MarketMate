@@ -79,7 +79,6 @@ namespace MarketMate.adminUserControls
         }
         private void showUsers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Ensure the user clicked a valid row and not the header or an empty area
             if (e.RowIndex >= 0)
             {
                 // Retrieve the selected row
@@ -141,7 +140,6 @@ namespace MarketMate.adminUserControls
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            // Ensure the user has selected a row to delete
             if (string.IsNullOrEmpty(cashierIDTxt.Text))
             {
                 MessageBox.Show("Please select a cashier record to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
