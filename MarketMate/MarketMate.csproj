@@ -218,6 +218,12 @@
     <Compile Include="adminUserControls\AddStocks.Designer.cs">
       <DependentUpon>AddStocks.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminUserControls\AddSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminUserControls\AddSuppliers.Designer.cs">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminUserControls\ManageCashiers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\AddStocks.resx">
       <DependentUpon>AddStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserControls\AddSuppliers.resx">
+      <DependentUpon>AddSuppliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="adminUserControls\ManageCashiers.resx">
       <DependentUpon>ManageCashiers.cs</DependentUpon>
